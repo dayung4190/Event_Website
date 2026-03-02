@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Register</h1></header>
+<nav>…same nav…</nav>
+
+<div class="container">
+<div class="section">
+
+<form onsubmit="event.preventDefault();showModal();">
+<label>Name</label><input required>
+<label>Email</label><input type="email" required>
+<label>Type</label>
+<select><option>Student</option><option>Business</option></select>
+<button class="btn">Submit</button>
+</form>
+
+</div>
+</div>
+
+<div id="modal" class="modal">
+<div class="modal-box">
+<h3>Success</h3>
+<a href="ticket.html" class="btn">View Ticket</a><br><br>
+<button onclick="closeModal()">Close</button>
+</div>
+</div>
+
+<script src="js/advanced.js"></script>
+</body>
+</html>

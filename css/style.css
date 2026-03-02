@@ -1,0 +1,64 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f6f9;color:#222;line-height:1.6}
+
+header{background:#0b3d91;color:#fff;padding:20px 40px}
+nav{background:#062a63;padding:12px 40px}
+nav a{color:#fff;text-decoration:none;margin-right:18px;font-weight:bold}
+nav a:hover{color:#ffd24c}
+
+.container{width:92%;max-width:1100px;margin:auto;padding:30px 0}
+.section{background:#fff;margin-bottom:25px;padding:25px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+
+h2{color:#0b3d91;margin-bottom:12px}
+
+.btn{display:inline-block;background:#0b3d91;color:#fff;padding:12px 18px;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
+.btn:hover{background:#062a63}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fafafa;padding:18px;border-radius:8px;border:1px solid #e3e6ea}
+
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px;border:1px solid #ddd}
+th{background:#0b3d91;color:#fff}
+tr:hover{background:#f1f5ff}
+
+form input,form select,form textarea{
+width:100%;padding:10px;margin:6px 0 14px;border:1px solid #ccc;border-radius:5px
+}
+
+footer{background:#062a63;color:#fff;text-align:center;padding:20px;margin-top:40px}
+
+/* slider */
+.slider{position:relative;height:300px;overflow:hidden}
+.slide{position:absolute;width:100%;height:100%;display:none;color:#fff;padding:60px}
+.slide.active{display:block}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;justify-content:center;align-items:center}
+.modal-box{background:#fff;padding:30px;border-radius:8px;width:320px;text-align:center}
+
+/* dark mode */
+.dark{background:#0f172a;color:#e5e7eb}
+.dark .section,.dark .card{background:#111827;color:#e5e7eb}
+
+/* back to top */
+#topBtn{position:fixed;bottom:20px;right:20px;padding:12px;border:none;border-radius:6px;display:none;cursor:pointer}
+
+/* responsive */
+@media(max-width:768px){
+nav{text-align:center}
+header,nav{padding:15px}
+}
+.speaker-img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:8px;
+  margin-bottom:12px;
+}
+
+.speaker-role{
+  color:#666;
+  font-size:14px;
+  margin-bottom:8px;
+}
